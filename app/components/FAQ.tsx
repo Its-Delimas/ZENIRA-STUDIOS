@@ -99,11 +99,10 @@ export default function FAQ() {
                   className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left group"
                 >
                   <span
-                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors duration-200 ${
-                      isOpen
+                    className={`text-sm sm:text-base font-semibold leading-snug transition-colors duration-200 ${isOpen
                         ? "text-black dark:text-white"
                         : "text-black/70 dark:text-white/70 group-hover:text-black dark:group-hover:text-white"
-                    }`}
+                      }`}
                   >
                     {faq.question}
                   </span>
@@ -153,7 +152,7 @@ export default function FAQ() {
             Still have questions? We're one message away.
           </p>
           <a
-            href={`https://wa.me/254718376981?text=${encodeURIComponent("Hi Zenira, I have a question about your services.")}`}
+            href={`https://wa.me/254787891691?text=${encodeURIComponent("Hi Zenira, I have a question about your services.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl border border-black/10 dark:border-white/10 text-sm font-semibold text-black dark:text-white hover:border-[#E0001B]/40 hover:text-[#E0001B] dark:hover:text-[#E0001B] transition-all duration-200 group"

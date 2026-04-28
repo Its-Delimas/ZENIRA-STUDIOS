@@ -9,8 +9,8 @@ const packages = [
     name: "Starter",
     badge: null,
     tagline: "Get Found",
-    setupPrice: 15000,
-    maintenancePrice: 19000,
+    setupPrice: 8000,
+    maintenancePrice: 10000,
     description: "Perfect for shops that need a solid online presence fast.",
     features: [
       "Static business website",
@@ -30,8 +30,8 @@ const packages = [
     name: "Basic Shop",
     badge: "Most Popular",
     tagline: "Start Selling",
-    setupPrice: 25000,
-    maintenancePrice: 30000,
+    setupPrice: 15000,
+    maintenancePrice: 18000,
     description: "Everything to get your shop selling online from day one.",
     features: [
       "Everything in Starter",
@@ -51,8 +51,8 @@ const packages = [
     name: "Growth",
     badge: null,
     tagline: "Sell Smarter",
-    setupPrice: 55000,
-    maintenancePrice: 65000,
+    setupPrice: 30000,
+    maintenancePrice: 38000,
     description: "Full e-commerce power with payments, inventory, and AI.",
     features: [
       "Everything in Basic Shop",
@@ -287,10 +287,10 @@ function PricingCard({
 
         {/* Milestone note */}
         <div className={`text-[10px] px-3 py-2 rounded-lg flex items-center gap-2 ${pkg.highlight
-            ? "bg-[#E0001B]/8 text-[#E0001B]"
-            : pkg.pro
-              ? "bg-white/5 text-white/40"
-              : "bg-black/5 dark:bg-white/5 text-black/40 dark:text-white/40"
+          ? "bg-[#E0001B]/8 text-[#E0001B]"
+          : pkg.pro
+            ? "bg-white/5 text-white/40"
+            : "bg-black/5 dark:bg-white/5 text-black/40 dark:text-white/40"
           }`}>
           <div className="w-1 h-1 rounded-full bg-[#006B3F] flex-shrink-0" />
           50% on start · 50% on delivery

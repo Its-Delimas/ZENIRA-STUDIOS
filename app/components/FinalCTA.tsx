@@ -57,7 +57,7 @@ export default function FinalCTA() {
                                 <ArrowRight size={15} />
                             </Link>
                             <a
-                                href={`https://wa.me/254718376981?text=${encodeURIComponent("Hi Zenira, I'd like to get my shop found online.")}`}
+                                href={`https://wa.me/254787891691?text=${encodeURIComponent("Hi Zenira, I'd like to get my shop found online.")}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold text-black dark:text-white border border-black/15 dark:border-white/15 hover:border-black/30 dark:hover:border-white/30 transition-colors duration-200"
