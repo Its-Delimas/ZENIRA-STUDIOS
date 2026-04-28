@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "e-commerce Kenya",
     "M-Pesa website",
   ],
+  verification: {
+    google: "MyQstCdU2a5sXL8KSIzHlrNAm659atYzPKMZ3_Hgzbk"
+  },
   openGraph: {
     title: "Zenira — Your Shop, Found.",
     description:
