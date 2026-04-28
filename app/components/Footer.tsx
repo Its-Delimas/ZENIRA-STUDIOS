@@ -128,7 +128,7 @@ export default function Footer() {
                                 className="flex items-start gap-2.5 text-sm text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-200 group"
                             >
                                 <Mail size={14} className="mt-0.5 flex-shrink-0 group-hover:text-[#E0001B] transition-colors" />
-                                hello@zenira.co.ke
+                                support@zenira.studio
                             </a>
                             </li>
                             <li><a
