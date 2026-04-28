@@ -1,1 +1,24 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --red: #E0001B;
+    --red-hover: #B50016;
+    --green: #006B3F;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #E0001B;
+    color: white;
+  }
+}
