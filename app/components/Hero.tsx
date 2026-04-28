@@ -16,14 +16,14 @@ export default function Hero() {
       <div
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
         style={{
-          backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(#915F5F 1px, transparent 1px), linear-gradient(90deg, #915F5F 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
 
       {/* Red radial glow — bottom right behind mockup */}
       <div
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none"
         style={{
           background:
             "radial-gradient(circle, rgba(224,0,27,0.12) 0%, transparent 70%)",

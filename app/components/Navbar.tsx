@@ -28,13 +28,13 @@ export default function Navbar() {
         <>
             <nav
                 className={`
-          fixed top-0 left-0 right-0 z-50 h-[68px]
-          transition-all duration-300
-          ${scrolled
+    fixed top-0 left-0 right-0 z-[60] h-[68px]
+    transition-all duration-300
+    ${scrolled || mobileOpen
                         ? "border-b border-black/10 dark:border-white/10 bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-[12px]"
                         : "bg-transparent"
                     }
-        `}
+  `}
             >
                 <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
@@ -46,6 +46,7 @@ export default function Navbar() {
                                 alt="Zenira"
                                 width={110}
                                 height={32}
+                                style={{ height: "auto" }}
                                 priority
                             />
                         ) : (
@@ -93,9 +94,8 @@ export default function Navbar() {
                             Get Started
                         </Link>
                     </div>
-
                     {/* Mobile: toggle + hamburger */}
-                    <div className="flex md:hidden items-center gap-3">
+                    <div className="flex md:hidden items-center gap-3 relative z-50">
                         {mounted && (
                             <button
                                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -110,7 +110,8 @@ export default function Navbar() {
                             className="p-2 text-black/70 dark:text-white/70"
                             aria-label="Toggle menu"
                         >
-                            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+                            {mobileOpen && <X size={20} />}
+                            {!mobileOpen && <Menu size={20} />}
                         </button>
                     </div>
                 </div>
@@ -118,7 +119,7 @@ export default function Navbar() {
 
             {/* Mobile drawer */}
             {mobileOpen && (
-                <div className="fixed inset-0 z-40 md:hidden pt-[68px]">
+                <div className="fixed inset-0 z-50 md:hidden pt-[68px]">
                     {/* Backdrop */}
                     <div
                         className="absolute inset-0 bg-black/30 dark:bg-black/60 backdrop-blur-sm"
