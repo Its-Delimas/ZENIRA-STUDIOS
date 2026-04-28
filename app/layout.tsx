@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import { ThemeProvider } from "next-themes"
+import ThemeWrapper from "./components/ThemeWrapper"
 import Navbar from "./components/Navbar"
 
 export const metadata: Metadata = {
@@ -16,17 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
+        <ThemeWrapper>
           <Navbar />
           <main className="pt-[68px]">
             {children}
           </main>
-        </ThemeProvider>
+        </ThemeWrapper>
       </body>
     </html>
   )
